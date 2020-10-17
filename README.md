@@ -1,2 +1,1 @@
-lcm2rosmsg.py
   用于将LCM生成的消息文件(hpp)转化成ROS消息格式（msg）
