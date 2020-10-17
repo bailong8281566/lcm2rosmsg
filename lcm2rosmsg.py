@@ -1,4 +1,3 @@
-# TrajectoryMsg
 import os,winreg
 
 key = winreg.OpenKey(winreg.HKEY_CURRENT_USER,r'Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders')
