@@ -3,10 +3,10 @@ import os,winreg
 key = winreg.OpenKey(winreg.HKEY_CURRENT_USER,r'Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders')
 desktop = winreg.QueryValueEx(key, "Desktop")[0]
 
-setDir = os.path.join(desktop,'lcm_message')
+setDir = os.path.join(desktop,'location_lcm')
 # 创建desktop/lcm_message/convertros的文件夹，用于保存msg消息
 resDir = os.path.join(setDir,'convertros')
-lcmfiles = [file for file in os.listdir(setDir) if file.endswith('hpp')]
+lcmfiles = [file for file in os.listdir(setDir) if file.endswith(('.h','.hpp'))]
  
 if not os.path.exists(resDir):
     os.makedirs(resDir)
